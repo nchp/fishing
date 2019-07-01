@@ -246,7 +246,7 @@ MonoBehaviour:
   m_spawnArea: {x: 30, y: 20, z: 20}
   AiObject:
   - m_aiGroupName: Fish
-    m_prefab: {fileID: 4205980296154302508, guid: a3507175b6f27344eb08ab2af4197c17,
+    m_prefab: {fileID: 3709625950289226287, guid: aa27e7dff2ed41949add7dfe5fc9e7c2,
       type: 3}
     m_maxAi: 0
     m_spawnRate: 0

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - waypoint
+  - projectile
+  - island
   layers:
   - Default
   - TransparentFX
