@@ -58,7 +58,11 @@
      <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
      <Compile Include="Assets\Scripts\AiMove.cs" />
      <Compile Include="Assets\Scripts\AiSpawner.cs" />
+     <Compile Include="Assets\Scripts\DieTimer.cs" />
+     <Compile Include="Assets\Scripts\FishBehavior.cs" />
+     <Compile Include="Assets\Scripts\FishFood.cs" />
      <Compile Include="Assets\Scripts\Fishing.cs" />
+     <Compile Include="Assets\Scripts\Lure.cs" />
      <Compile Include="Assets\Scripts\WaterProps.cs" />
      <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
      <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
