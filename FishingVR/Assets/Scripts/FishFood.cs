@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class FishFood : MonoBehaviour
 {
-    public inr foodSize = 1;
+    public int foodSize = 1;
     public bool isAttachedToPlayerLure;
     public Lure attachedPlayerLure;
 
     public bool bite()
     {
-        if(this.foodSize <= 0)
+        if (this.foodSize <= 0)
         {
             return false;
         }
@@ -20,7 +20,7 @@ public class FishFood : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(this.foodSize == 0)
+        if (this.foodSize == 0)
         {
             Destroy(base.gameObject);
         }

@@ -11,15 +11,15 @@ public class Lure : MonoBehaviour
 
     public void addBait(FishFood bait)
     {
-        if(!this.hasBait && bait)
+        if (!this.hasBait && bait)
         {
-            bait.isAttachedToPlayerLure == true;
+            bait.isAttachedToPlayerLure = true;
             bait.attachedPlayerLure = this;
             bait.GetComponentInParent<Transform>().parent.parent = base.gameObject.transform;
             bait.transform.localPosition.Set(0f, 0f, 0f);
             FixedJoint joint = bait.transform.parent.gameObject.AddComponent<FixedJoint>();
             joint.anchor.Set(0f, 0f, 0f);
-            joint.connectedBody = base.gameObject.GetComponent<RigidBody>();
+            joint.connectedBody = base.gameObject.GetComponent<Rigidbody>();
             this.hasBait = true;
             this.attachedBait = bait;
         }
@@ -27,10 +27,10 @@ public class Lure : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(!this.hasBait || !this.attachedBait)
+        if (!this.hasBait || !this.attachedBait)
         {
-            FishFodd componentInChildren = collision.collider.gameObject.GetComponentInChildren<FishFood>();
-            if(componentInChildren)
+            FishFood componentInChildren = collision.collider.gameObject.GetComponentInChildren<FishFood>();
+            if (componentInChildren)
             {
                 this.addBait(componentInChildren);
             }
@@ -46,6 +46,6 @@ public class Lure : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
