@@ -243,10 +243,10 @@ MonoBehaviour:
   Waypoints: []
   m_spawnTimer: 5
   m_spawnColor: {r: 1, g: 0, b: 0, a: 0.3}
-  m_spawnArea: {x: 30, y: 20, z: 20}
+  m_spawnArea: {x: 40, y: 20, z: 60}
   AiObject:
   - m_aiGroupName: Fish
-    m_prefab: {fileID: 3709625950289226287, guid: aa27e7dff2ed41949add7dfe5fc9e7c2,
+    m_prefab: {fileID: 4586246971882499905, guid: a3507175b6f27344eb08ab2af4197c17,
       type: 3}
     m_maxAi: 0
     m_spawnRate: 0
@@ -261,7 +261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302649528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.32, y: 0, z: -1.1}
+  m_LocalPosition: {x: 2.32, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1245480539}
