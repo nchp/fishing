@@ -53,7 +53,7 @@ public class FishingRod : MonoBehaviour
 
     private void Start()
     {
-        this.attachPoint = base.GetComponent<NVRAttachJoint>();
+        this.attachPoint = base.GetComponent<NVRAttachPoint>();
         this.joint = base.GetComponent<SpringJoint>();
         this.lineRenderer = base.GetComponent<LineRenderer>();
         this.lineDrawPoint = base.GetComponentInChildren<InteractionPoint>();
