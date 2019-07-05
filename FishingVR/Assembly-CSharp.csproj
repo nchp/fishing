@@ -121,6 +121,7 @@
      <Compile Include="Assets\Scripts\Lure.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
      <Compile Include="Assets\Scripts\Reel.cs" />
+     <Compile Include="Assets\Scripts\Rope.cs" />
      <Compile Include="Assets\Scripts\ValueAxis.cs" />
      <Compile Include="Assets\Scripts\WaterProps.cs" />
      <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
