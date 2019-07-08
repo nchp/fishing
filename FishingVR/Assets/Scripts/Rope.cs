@@ -17,7 +17,11 @@ public class Rope : MonoBehaviour
     [SerializeField]
     public bool reset, spawn, snapFirst, snapLast;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        Spawn();
+    }
+
     void Update()
     {
         if (reset)
@@ -52,11 +56,20 @@ public class Rope : MonoBehaviour
             if (x == 0)
             {
                 Destroy(tmp.GetComponent<CharacterJoint>());
+                if(snapFirst)
+                {
+                    tmp.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                }
             }
             else
             {
                 tmp.GetComponent<CharacterJoint>().connectedBody = parentObject.transform.Find((parentObject.transform.childCount - 1).ToString()).GetComponent<Rigidbody>();
             }
+        }
+
+        if (snapLast)
+        {
+            parentObject.transform.Find((parentObject.transform.childCount).ToString()).GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
         }
     }
 }
