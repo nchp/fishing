@@ -567,6 +567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4586246971882468129}
   - component: {fileID: 4586246971891981537}
+  - component: {fileID: 3813080834987561179}
   m_Layer: 0
   m_Name: SCharacter_Fish
   m_TagString: Untagged
@@ -581,7 +582,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4586246971882499905}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 32.2, y: 0, z: -43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -609,6 +610,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3813080834987561179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4586246971882499905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85b4d40b93194a4c88afb88cf8673c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.001
 --- !u!1 &4586246971882499907
 GameObject:
   m_ObjectHideFlags: 0
