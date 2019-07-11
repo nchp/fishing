@@ -111,6 +111,9 @@
      <Compile Include="Assets\NewtonVR\SteamVR\NVRSteamVRIntegration.cs" />
      <Compile Include="Assets\Scripts\AiMove.cs" />
      <Compile Include="Assets\Scripts\AiSpawner.cs" />
+     <Compile Include="Assets\Scripts\CurvedLine\CurvedLinePoint.cs" />
+     <Compile Include="Assets\Scripts\CurvedLine\CurvedLineRenderer.cs" />
+     <Compile Include="Assets\Scripts\CurvedLine\LineSmoother.cs" />
      <Compile Include="Assets\Scripts\DieTimer.cs" />
      <Compile Include="Assets\Scripts\dropTheBait.cs" />
      <Compile Include="Assets\Scripts\Fish.cs" />
