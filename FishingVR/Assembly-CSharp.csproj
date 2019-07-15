@@ -121,6 +121,7 @@
     <Compile Include="Assets\Scripts\CurvedLine\CurvedLinePoint.cs" />
     <Compile Include="Assets\Scripts\CurvedLine\CurvedLineRenderer.cs" />
     <Compile Include="Assets\Scripts\CurvedLine\LineSmoother.cs" />
+    <Compile Include="Assets\Scripts\DistanceJoint3D.cs" />
     <Compile Include="Assets\Scripts\dropTheBait.cs" />
     <Compile Include="Assets\Scripts\flock.cs" />
     <Compile Include="Assets\Scripts\globalFlock.cs" />
@@ -335,9 +336,6 @@
     <Reference Include="Valve.Newtonsoft.Json">
       <HintPath>D:/FishingVr/fishing/fishingVR/FishingVR/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>D:/FishingVr/fishing/fishingVR/FishingVR/Library/PackageCache/com.unity.ads@2.0.8/UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/FishingVr/fishing/fishingVR/FishingVR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -346,9 +344,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>D:/FishingVr/fishing/fishingVR/FishingVR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>D:/FishingVr/fishing/fishingVR/FishingVR/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/Unity/2019.1.8f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
