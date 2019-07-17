@@ -55,6 +55,13 @@ public class AiObjects
 
 public class AiSpawner : MonoBehaviour
 {
+    public string[] animals = new string[]
+    {
+        "anchovy",
+        "catfish",
+        "eel",
+        "frog"
+    };
 
     public List<Transform> Waypoints = new List<Transform>();
 
@@ -70,10 +77,8 @@ public class AiSpawner : MonoBehaviour
     [SerializeField]
     private Vector3 m_spawnArea = new Vector3(20f, 10f, 20f);
 
-
-
     [Header("Ai Group Settings")]
-    public AiObjects[] AiObject = new AiObjects[5];
+    public AiObjects[] AiObject = new AiObjects[2];
 
     // Start is called before the first frame update
     void Start()
@@ -99,7 +104,7 @@ public class AiSpawner : MonoBehaviour
                 GameObject tempGroup = GameObject.Find(AiObject[i].AiGroupName);
                 if(tempGroup.GetComponentInChildren<Transform>().childCount < AiObject[i].maxAi)
                 {
-                    for(int y=0; y<Random.Range(0,AiObject[i].spawnAmount); y++)
+                    for(int y=0; y<AiObject[i].spawnAmount; y++)
                     {
                         Quaternion randomRotation = Quaternion.Euler(Random.Range(-20, 20), Random.Range(0, 360), 0);
                         GameObject tempSpawn;

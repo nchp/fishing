@@ -17,6 +17,14 @@ public class AiMove : MonoBehaviour
 
     private Collider m_collider;
 
+    public string[] animals = new string[]
+    {
+        "anchovy",
+        "catfish",
+        "eel",
+        "frog"
+    };
+
     // Start is called before the first frame update
     void Start()
     {
