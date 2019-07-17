@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Cartoon_forest_pack/_Scenes/Summer.unity
+- path: Assets/Scenes/Summer.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
