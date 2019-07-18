@@ -50,7 +50,9 @@ public class dropTheBait : MonoBehaviour
                 baitPrefab.SetActive(true);
             }
         }
+        
 
+        
         double deltaRot = rotatorPrefab.transform.rotation.eulerAngles.x - prevRot;
 
         if (deltaRot < 0)
@@ -66,8 +68,9 @@ public class dropTheBait : MonoBehaviour
 
         prevRot = rotatorPrefab.transform.rotation.eulerAngles.x;
 
+        /*
         // pull
-        /* if (Input.GetKey("4"))
+        if (Input.GetKey("4"))
         {
 
             Distance = (float)(Distance + 0.1);
