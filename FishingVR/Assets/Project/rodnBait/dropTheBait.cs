@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class dropTheBait : MonoBehaviour
 {
+    private static double prevRot = 0;
+
+    public GameObject rotatorPrefab;
     public GameObject baitPrefab;
     public GameObject hookPrefab;
     public static Vector3 baitPos = Vector3.zero;
@@ -48,10 +51,23 @@ public class dropTheBait : MonoBehaviour
             }
         }
 
-        
+        double deltaRot = rotatorPrefab.transform.rotation.eulerAngles.x - prevRot;
 
-        //pull
-        if (Input.GetKey("4"))
+        if (deltaRot < 0)
+        {
+            Distance = (float)(Distance + 0.1);
+        }
+        else if (deltaRot > 0)
+        {
+            Distance = (float)(Distance - 0.1);
+        }
+
+        // Distance += (float)(deltaRot * 0.001);
+
+        prevRot = rotatorPrefab.transform.rotation.eulerAngles.x;
+
+        // pull
+        /* if (Input.GetKey("4"))
         {
 
             Distance = (float)(Distance + 0.1);
@@ -64,9 +80,10 @@ public class dropTheBait : MonoBehaviour
 
             Distance = (float)(Distance - 0.1);
         }
+        */
 
 
-        
+
 
     }
 }
