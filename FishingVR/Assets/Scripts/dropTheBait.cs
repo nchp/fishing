@@ -53,20 +53,22 @@ public class dropTheBait : MonoBehaviour
         
 
         
-        double deltaRot = rotatorPrefab.transform.rotation.eulerAngles.x - prevRot;
+        double deltaRot = EulerGet.EulerZ - prevRot;
+        //Debug.Log(deltaRot);
+        float range = (float)(((float)deltaRot) * 0.05);
 
-        if (deltaRot < 0)
-        {
-            Distance = (float)(Distance + 0.1);
-        }
-        else if (deltaRot > 0)
-        {
-            Distance = (float)(Distance - 0.1);
-        }
+        //Debug.Log(range);
+
+            Distance = (float)(Distance + range * 0.05);
+            
+
+            if (Distance < 0)
+            { Distance = 0; }
+
 
         // Distance += (float)(deltaRot * 0.001);
 
-        prevRot = rotatorPrefab.transform.rotation.eulerAngles.x;
+        prevRot = EulerGet.EulerZ;
 
         /*
         // pull
