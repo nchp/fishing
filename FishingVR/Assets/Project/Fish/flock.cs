@@ -39,47 +39,45 @@ public class flock : MonoBehaviour
         //      this.transform.position = hookPos;
         //}
 
-        if (Range <= 0.3f) 
-        {
-            this.transform.position = hookPos;
 
-            baitCode.baitEnable = 0;
+        if ((Range <= 0.3f) && (fCatch == 0))
+        {
 
             fCatch = 1;
+            Debug.Log(fCatch);
+
         }
-        else
-        {
-            yPos = new Vector3(0f, transform.position.y, 0f);
 
-            if ((Vector3.Distance(transform.position, Vector3.zero) >= globalFlock.tankSize) || (Vector3.Distance(yPos, Vector3.zero) >= globalFlock.waterLevel))//condition for prevent fish getting out of the tank
-            {
-                turning = true;
+        yPos = new Vector3(0f, transform.position.y, 0f);
 
-            }
-            else
-                turning = false;
+                if ((Vector3.Distance(transform.position, Vector3.zero) >= globalFlock.tankSize) || (Vector3.Distance(yPos, Vector3.zero) >= globalFlock.waterLevel))//condition for prevent fish getting out of the tank
+                {
+                    turning = true;
 
-            if (turning)
-            {
-                Vector3 direction = Vector3.zero - transform.position;
-                transform.rotation = Quaternion.Slerp(transform.rotation,
-                                                          Quaternion.LookRotation(direction),
-                                                          rotationSpeed * Time.deltaTime);
-                speed = Random.Range(0.5f, 1);
-            }
-            else
-            {
-                if (Random.Range(0, 5) < 1)
-                    ApplyRules();
+                }
+                else
+                    turning = false;
 
-            }
-            if ((this.transform.position == hookPos) && (baitCode.baitEnable == 0))
-            {
-                this.transform.position = hookPos;
-            }
-            else
-            { transform.Translate(0, 0, Time.deltaTime * speed); }
-        }
+                if (turning)
+                {
+                    Vector3 direction = Vector3.zero - transform.position;
+                    transform.rotation = Quaternion.Slerp(transform.rotation,
+                                                              Quaternion.LookRotation(direction),
+                                                              rotationSpeed * Time.deltaTime);
+                    speed = Random.Range(0.5f, 1);
+                }
+                else
+                {
+                    if (Random.Range(0, 5) < 1)
+                        ApplyRules();
+
+                }
+               
+                
+                
+                transform.Translate(0, 0, Time.deltaTime * speed);
+
+
     }
 
 

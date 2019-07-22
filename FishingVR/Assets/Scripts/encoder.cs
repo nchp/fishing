@@ -19,9 +19,5 @@ public class encoder : MonoBehaviour
     {
         en1Angle = en1Prefab.transform.rotation.eulerAngles.x;
         en2Angle = en2Prefab.transform.rotation.eulerAngles.x;
-        Debug.Log("1");
-        Debug.Log(en1Angle);
-        Debug.Log("2");
-        Debug.Log(en2Angle);
     }
 }
