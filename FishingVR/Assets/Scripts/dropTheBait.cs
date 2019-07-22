@@ -13,7 +13,7 @@ public class dropTheBait : MonoBehaviour
     public static Vector3 hookPos = Vector3.zero;
     static int tankSize = globalFlock.tankSize;
     static int waterLevel = globalFlock.waterLevel;
-    public static float Distance = 0;
+    public static float Distance = 2;
     public static int baitValue = 0;
     public static GameObject bait;
     public static int haveBait;

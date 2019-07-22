@@ -28,6 +28,15 @@ public class fishBurn : MonoBehaviour
             Destroy(this.gameObject);
             Debug.Log("burn1");
             flock.fCatch = 0;
+
+            if (spawnCFish.categoryNum == 1)
+            {
+                Scoring.score += 100;
+            }
+            else
+            {
+                // light off 
+            }
         }
 
         else if (distance2 < 0.5)
@@ -35,6 +44,15 @@ public class fishBurn : MonoBehaviour
             Destroy(this.gameObject);
             Debug.Log("burn2");
             flock.fCatch = 0;
+
+            if (spawnCFish.categoryNum == 2)
+            {
+                Scoring.score += 100;
+            }
+            else
+            {
+                // light off 
+            }
         }
 
         else if (distance3 < 0.5)
@@ -42,6 +60,15 @@ public class fishBurn : MonoBehaviour
             Destroy(this.gameObject);
             Debug.Log("burn3");
             flock.fCatch = 0;
+
+            if (spawnCFish.categoryNum == 3)
+            {
+                Scoring.score += 100;
+            }
+            else
+            {
+                // light off 
+            }
         }
 
         else if (distance4 < 0.5)
@@ -49,6 +76,15 @@ public class fishBurn : MonoBehaviour
             Destroy(this.gameObject);
             Debug.Log("burn4");
             flock.fCatch = 0;
+
+            if (spawnCFish.categoryNum == 4)
+            {
+                Scoring.score += 100;
+            }
+            else
+            {
+                // light off 
+            }
         }
 
         else if (distance5 < 0.5)
@@ -56,6 +92,15 @@ public class fishBurn : MonoBehaviour
             Destroy(this.gameObject);
             Debug.Log("burn5");
             flock.fCatch = 0;
+
+            if (spawnCFish.categoryNum == 5)
+            {
+                Scoring.score += 100;
+            }
+            else
+            {
+                // light off 
+            }
         }
 
 

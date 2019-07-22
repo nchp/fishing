@@ -59,6 +59,8 @@ public class spawnCFish : MonoBehaviour
             Debug.Log(wordNum);
 
             flock.fCatch = 2;
+
+
         }
 
         if (flock.fCatch == 2 )
