@@ -44,7 +44,7 @@ public class flock : MonoBehaviour
         {
 
             fCatch = 1;
-            Debug.Log(fCatch);
+            //Debug.Log(fCatch);
 
         }
 

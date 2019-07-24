@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.fishingvr.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\smitstudio\\Documents\\GitHub\\fishing\\FishingVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\smitstudio\\Documents\\GitHub\\fishnaja\\FishingVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "FishingVR [Testing]"

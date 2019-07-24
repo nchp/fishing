@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class DistanceJoint3D : MonoBehaviour
+public class distancejoint3D : MonoBehaviour
 {
 
     public Transform ConnectedRigidbody;

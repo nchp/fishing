@@ -1,0 +1,76 @@
+apple pie
+birthday cake
+cake
+candy
+chocolate cake
+chocolate bar
+chocolate chip cookie
+cookies
+donut
+doughnuts
+fruit
+ice cream
+muffin
+pie
+pie a la mode
+potato chips
+pudding
+sweet rolls
+whip cream
+asparagus
+beans
+beet
+broccoli
+Brussels sprouts
+cabbage
+carrot
+cauliflower
+celery
+Chinese cabbage
+corn
+cucumber
+eggplant
+green pepper
+Japanese radish
+kale
+lettuce
+okra
+onion
+peas
+potato
+pumpkins
+radish
+spinach
+sweet potato
+tomatoes
+turnips
+apple
+apricot
+banana
+blackberry
+blueberry
+cherry
+cranberry
+currant
+fig
+grape
+grapefruit
+grapes
+kiwi
+kumquat
+lemon
+lime
+melon
+nectarine
+orange
+peach
+pear
+persimmon
+pineapple
+plum
+pomegranate
+prune
+raspberry
+strawberry
+tangerine
+watermelon

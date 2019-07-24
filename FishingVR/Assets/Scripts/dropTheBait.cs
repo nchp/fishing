@@ -6,14 +6,15 @@ public class dropTheBait : MonoBehaviour
 {
     private static double prevRot = 0;
 
-    public GameObject rotatorPrefab;
     public GameObject baitPrefab;
     public GameObject hookPrefab;
+    public GameObject endPointPrefab;
     public static Vector3 baitPos = Vector3.zero;
     public static Vector3 hookPos = Vector3.zero;
+    public static Vector3 endPointPos = Vector3.zero;
     static int tankSize = globalFlock.tankSize;
     static int waterLevel = globalFlock.waterLevel;
-    public static float Distance = 2;
+    public static float Distance = 0;
     public static int baitValue = 0;
     public static GameObject bait;
     public static int haveBait;
@@ -31,7 +32,7 @@ public class dropTheBait : MonoBehaviour
 
         baitPos = hookPos;
 
-        
+        endPointPos = endPointPrefab.transform.position;
 
         if (Input.GetKey("3"))//enable the bait(put the bait to the hook)
         {
@@ -50,9 +51,24 @@ public class dropTheBait : MonoBehaviour
                 baitPrefab.SetActive(true);
             }
         }
-        
+
+        if (Input.GetKeyDown("space"))
+        {
+            print("Space key was pressed");
+            hookPrefab.GetComponent<distancejoint3Dnew>().enabled = false;
+
+        }
+
+        if (Input.GetKeyUp("space"))
+        {
+            print("Space key was released");
+            hookPrefab.GetComponent<distancejoint3Dnew>().enabled = true;
+            Distance = Vector3.Distance(endPointPos, hookPos);
+        }
 
         
+
+
         double deltaRot = EulerGet.EulerZ - prevRot;
         //Debug.Log(deltaRot);
         float range = (float)(((float)deltaRot) * 0.05);

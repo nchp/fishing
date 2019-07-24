@@ -107,7 +107,10 @@
      <Compile Include="Assets\_Cartoon_forest_pack\Standard Assets\Water\Scripts\Water.cs" />
      <Compile Include="Assets\_Cartoon_forest_pack\Standard Assets\Water\Scripts\WaterBase.cs" />
      <Compile Include="Assets\_Cartoon_forest_pack\Standard Assets\Water\Scripts\WaterTile.cs" />
-     <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+     <Compile Include="Assets\Game System\changeScore.cs" />
+     <Compile Include="Assets\Game System\changeWords.cs" />
+     <Compile Include="Assets\Game System\readText.cs" />
+     <Compile Include="Assets\Game System\RodCode.cs" />
      <Compile Include="Assets\Project\Boat\Boat.cs" />
      <Compile Include="Assets\Project\Boat\switchMode.cs" />
      <Compile Include="Assets\Project\CurvedLine_2016_03_11\CurvedLine_2016_03_11\CurvedLine\CurvedLinePoint.cs" />
@@ -217,26 +220,29 @@
      <Compile Include="Assets\Project\testFish\testFlock.cs" />
      <Compile Include="Assets\Project\testFish\testGBF.cs" />
      <Compile Include="Assets\Project\testFish\testSpawn.cs" />
+     <Compile Include="Assets\randomText.cs" />
+     <Compile Include="Assets\readtext.cs" />
      <Compile Include="Assets\Scripts\AiMove.cs" />
      <Compile Include="Assets\Scripts\AiSpawner.cs" />
      <Compile Include="Assets\Scripts\CFishcode.cs" />
      <Compile Include="Assets\Scripts\ClampName.cs" />
+     <Compile Include="Assets\Scripts\CountdownScript.cs" />
      <Compile Include="Assets\Scripts\DistanceJoint3D.cs" />
+     <Compile Include="Assets\Scripts\distancejoint3Dnew.cs" />
      <Compile Include="Assets\Scripts\dropTheBait.cs" />
      <Compile Include="Assets\Scripts\encoder.cs" />
      <Compile Include="Assets\Scripts\EulerGet.cs" />
      <Compile Include="Assets\Scripts\fishBurn.cs" />
      <Compile Include="Assets\Scripts\fixPosition.cs" />
      <Compile Include="Assets\Scripts\GlueJoint.cs" />
-     <Compile Include="Assets\Scripts\References\Reel.cs" />
-     <Compile Include="Assets\Scripts\References\Rope.cs" />
-     <Compile Include="Assets\Scripts\References\ValueAxis.cs" />
-     <Compile Include="Assets\Scripts\Scoring.cs" />
+     <Compile Include="Assets\Scripts\inWorldInstructions.cs" />
+     <Compile Include="Assets\Scripts\Pointer.cs" />
+     <Compile Include="Assets\Scripts\randomWords.cs" />
      <Compile Include="Assets\Scripts\spawnCFish.cs" />
+     <Compile Include="Assets\Scripts\VRInputModule.cs" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
-     <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\Project\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
@@ -251,6 +257,7 @@
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Resources\2music-63.txt" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
@@ -259,10 +266,10 @@
      <None Include="Assets\Project\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Project\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
-     <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
      <None Include="Assets\Project\Standard Assets\Vehicles\Aircraft\AircraftGuidelines.txt" />
      <None Include="Assets\Project\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
+     <None Include="Assets\Resources\4animal75.txt" />
      <None Include="Assets\Project\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Project\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
@@ -292,6 +299,7 @@
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\Resources\3body-52.txt" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
@@ -307,6 +315,7 @@
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Resources\1sport-30.txt" />
      <None Include="Assets\Project\Standard Assets\Cameras\CameraGuidelines.txt" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
@@ -321,31 +330,33 @@
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
      <None Include="Assets\_Cartoon_camping_pack\Materials\Cutout_2Sided.shader" />
      <None Include="Assets\Project\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+     <None Include="Assets\Resources\5food76.txt" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\Project\SampleScenes\Shaders\Skybox-Procedural.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\Resources\Words.txt" />
      <None Include="Assets\_Cartoon_forest_pack\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/smitstudio/Documents/GitHub/fishing/FishingVR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/smitstudio/Documents/GitHub/fishnaja/FishingVR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/smitstudio/Documents/GitHub/fishing/FishingVR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/smitstudio/Documents/GitHub/fishing/FishingVR/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/smitstudio/Documents/GitHub/fishnaja/FishingVR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/smitstudio/Documents/GitHub/fishing/FishingVR/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/smitstudio/Documents/GitHub/fishnaja/FishingVR/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/smitstudio/Documents/GitHub/fishing/FishingVR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/smitstudio/Documents/GitHub/fishnaja/FishingVR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/smitstudio/Documents/GitHub/fishing/FishingVR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/smitstudio/Documents/GitHub/fishnaja/FishingVR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/smitstudio/Documents/GitHub/fishing/FishingVR/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>C:/Users/smitstudio/Documents/GitHub/fishnaja/FishingVR/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>C:/Users/smitstudio/Documents/GitHub/fishnaja/FishingVR/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -531,16 +542,16 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="Valve.Newtonsoft.Json">
- <HintPath>C:/Users/smitstudio/Documents/GitHub/fishing/FishingVR/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/smitstudio/Documents/GitHub/fishnaja/FishingVR/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/smitstudio/Documents/GitHub/fishing/FishingVR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>C:/Users/smitstudio/Documents/GitHub/fishnaja/FishingVR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/smitstudio/Documents/GitHub/fishing/FishingVR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/smitstudio/Documents/GitHub/fishnaja/FishingVR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/smitstudio/Documents/GitHub/fishing/FishingVR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>C:/Users/smitstudio/Documents/GitHub/fishnaja/FishingVR/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.6f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

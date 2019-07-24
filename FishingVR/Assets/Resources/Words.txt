@@ -1,0 +1,148 @@
+sport-30
+athletics
+baseball
+basketball
+bowling
+car racing
+cycling
+football
+golf
+gymnastics
+handball
+hang gliding
+hockey
+horse racing
+jogging
+motorcycle racing
+para gliding
+polo
+rugby
+scuba diving
+skiing
+skin diving
+snow-boarding
+soccer
+softball
+squash
+swimming
+table tennis
+tennis
+track and field
+volleyball
+music-63
+accordion
+agogo bells
+bagpipes
+banjo
+baritone
+bass drum
+bassoon
+bell lyre
+bongos
+bugle
+castanets
+celeste
+cello
+chimes
+clarinet
+claves
+conga
+cornet
+cowbell
+crash cymbal
+cymbal
+drum
+drum set
+electric guitar
+euphonium
+flugelhorn
+flute
+French horn
+glockenspiel
+gong
+grand piano
+guitar
+harmonica
+harp
+kettledrum
+lute
+mandolin
+maracas
+marimba
+oboe
+orchestra bells
+piano
+piccolo
+recorder
+ride cymbal
+saxophone
+scraper
+sizzle cymbal
+snare drum
+sousaphone
+splash cymbal
+steel drums
+tenor drum
+timbales
+timpani
+tom-tom
+triangle
+trombone
+trumpet
+tuba
+vibraphone
+violin
+xylophone
+body-52
+ankle
+arm
+back
+beard
+blood
+body
+bone
+brain
+cheek
+chest
+chin
+ear
+ears
+elbow
+eye
+eyes
+face
+feet
+finger
+fingers
+flesh
+foot
+hair
+hand
+hands
+head
+heart
+hip
+knee
+knees
+leg
+legs
+lip
+moustache
+mouth
+muscle
+nail
+neck
+nose
+shoulder
+shoulders
+skin
+stomach
+teeth
+throat
+thumb
+thumbs
+toe
+toes
+tongue
+tooth
+wrist
