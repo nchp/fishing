@@ -15,6 +15,7 @@ public class CountdownScript : MonoBehaviour
     void Start()
     {
         //timer = mainTimer;
+        // ResetBtn();
     }
 
     void Update()
@@ -32,7 +33,7 @@ public class CountdownScript : MonoBehaviour
             changeScore.haveRod = 0;
             canCount = false;
             doOnce = true;
-            uiText.text = "Game Over";
+            uiText.text = "0.00";
             timer = 0.0f;
             GameOver();
         }

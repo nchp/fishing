@@ -34,22 +34,19 @@ public class dropTheBait : MonoBehaviour
 
         endPointPos = endPointPrefab.transform.position;
 
-        if (Input.GetKey("3"))//enable the bait(put the bait to the hook)
+        if (haveBait == 0)
         {
-            if (haveBait == 0)
-            {
-                baitPos = dropTheBait.hookPos;
-                bait = (GameObject)Instantiate(baitPrefab, baitPos, Quaternion.identity);
-                haveBait = 1;
-            }
+            baitPos = dropTheBait.hookPos;
+            bait = (GameObject)Instantiate(baitPrefab, baitPos, Quaternion.identity);
+            haveBait = 1;
+        }
 
-            else if (haveBait == 1)
-            {
+        else if (haveBait == 1)
+        {
 
-                baitPrefab.transform.position = baitPos;
+            baitPrefab.transform.position = baitPos;
 
-                baitPrefab.SetActive(true);
-            }
+            baitPrefab.SetActive(true);
         }
 
         if (Input.GetKeyDown("space"))
@@ -71,11 +68,11 @@ public class dropTheBait : MonoBehaviour
 
         double deltaRot = EulerGet.EulerZ - prevRot;
         //Debug.Log(deltaRot);
-        float range = (float)(((float)deltaRot) * 0.05);
+        float range = (float)(((float)deltaRot) * 0.1);
 
         //Debug.Log(range);
 
-            Distance = (float)(Distance + range * 0.05);
+            Distance = (float)(Distance + range * 0.1);
             
 
             if (Distance < 0)
