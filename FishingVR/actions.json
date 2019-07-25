@@ -41,10 +41,6 @@
       "requirement": "optional"
     },
     {
-      "name": "/actions/default/in/ClickButton",
-      "type": "boolean"
-    },
-    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },

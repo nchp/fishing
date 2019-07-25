@@ -23,7 +23,7 @@ public class CountdownScript : MonoBehaviour
         if (timer >= 0.0f && canCount)
         {
             timer -= Time.deltaTime;
-            uiText.text = timer.ToString("F");
+            uiText.text = timer.ToString("0");
         }
 
         else if (timer <= 0.0f && !doOnce)
@@ -32,7 +32,7 @@ public class CountdownScript : MonoBehaviour
             changeScore.haveRod = 0;
             canCount = false;
             doOnce = true;
-            uiText.text = "0.00";
+            uiText.text = "Game Over";
             timer = 0.0f;
             GameOver();
         }

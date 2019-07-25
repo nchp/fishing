@@ -8,11 +8,13 @@ public class randomText : MonoBehaviour
     public List<string> Words;
     public static string FinalWord;
     public static string Filename;
-
+    public static int wordNum;
+    public static bool wordTemp;
     // Use this for initialization
     void Start()
     {
-        TextAsset Text = Resources.Load<TextAsset>("Words");
+
+        TextAsset Text = Resources.Load<TextAsset>("test");
 
         string[] lines = Text.text.Split("\n"[0]);
 
@@ -48,11 +50,11 @@ public class randomText : MonoBehaviour
     {
 
         //Debug.Log(Filename);
-
-        if ((flock.fCatch == 1) && (changeScore.gameStart == 1))
+        if ((spawnCFish.wordEnable == 1) && (changeScore.gameStart == 1))
         {
 
             FinalWord = generateWord();
+            spawnCFish.wordEnable = 0;
             changeWords.Word = FinalWord;
             Debug.Log("spawn word");
         }
@@ -66,47 +68,53 @@ public class randomText : MonoBehaviour
     {
         Debug.Log("spawn ja");
         string word;
-        int wordNum;
+
 
         if (spawnCFish.categoryNum == 1)
 
         {
             wordNum = Random.Range(0, 29);
+            Debug.Log(wordNum);
         }
-        else if (spawnCFish.categoryNum == 2)
+
+
+        if (spawnCFish.categoryNum == 2)
 
         {
             wordNum = Random.Range(31, 93);
+            Debug.Log(wordNum);
         }
 
-        else if (spawnCFish.categoryNum == 3)
+        if (spawnCFish.categoryNum == 3)
 
         {
             wordNum = Random.Range(95, 146);
+            Debug.Log(wordNum);
         }
 
-        else if (spawnCFish.categoryNum == 4)
+        if (spawnCFish.categoryNum == 4)
 
         {
             wordNum = Random.Range(148, 222);
+            Debug.Log(wordNum);
         }
 
-        else
+        if (spawnCFish.categoryNum == 5)
         {
             wordNum = Random.Range(225, 299);
+            Debug.Log(wordNum);
         }
 
-
-
         //word = Words[Random.Range(0, Words.Count)];
-        Debug.Log(wordNum);
 
         word = Words[wordNum];
 
         string returnWord = word;
+
+
         return returnWord;
 
-
     }
+
 
 }

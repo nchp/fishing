@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class spawnCFish : MonoBehaviour
 {
-    public static int wordNum;
     public static int categoryNum;
     public static int amountOfWords;
+    public static int wordEnable;
     public GameObject CFishPrefab;
 
     public GameObject campFirePrefab1;
@@ -47,7 +47,6 @@ public class spawnCFish : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        amountOfWords = 10;
 
     }
 
@@ -70,19 +69,15 @@ public class spawnCFish : MonoBehaviour
         {
 
             Instantiate(CFishPrefab, pos, Quaternion.identity);
-
             categoryNum = Random.Range(1, 5);
             Debug.Log(categoryNum);
-
-            randomText.Filename = categoryNum.ToString();
-
-            wordNum = (categoryNum * 100) + Random.Range(1, amountOfWords);
-            Debug.Log(wordNum);
-
+            //randomText.Filename = randomText.GenerateWord();
             flock.fCatch = 2;
+            wordEnable = 1;
 
 
         }
+
 
         if (flock.fCatch == 2)
         {
